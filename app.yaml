@@ -1,0 +1,47 @@
+# Use the PHP 7.3 runtime (BETA) by replacing "php72" below with "php73"
+runtime: php73
+
+runtime_config:
+  document_root: public
+
+env_variables:
+  APP_ENV: staging
+  APP_KEY: base64:ZIMYR363CJCBB9Rn5m6fMHmJP6DfqUURL7Pc2/a56dk=
+  APP_STORAGE: /tmp
+  VIEW_COMPILED_PATH: /tmp
+  SESSION_DRIVER: cookie
+  DB_CONNECTION: mysql
+  DB_HOST: localhost
+  DB_DATABASE: laravel
+  DB_USERNAME: root
+  DB_PASSWORD: Hotelaria@2020!
+  ## for MYSQL, use DB_SOCKET:rpl-works-portal-do-rh-qa:southamerica-east1:portalrhhotelaria-sql=tcp:3306
+  DB_SOCKET: /cloudsql/rpl-works-portal-do-rh-qa:southamerica-east1:portalrhhotelaria-sql
+
+  MAIL_MAILER: smtp
+  MAIL_HOST: email-ssl.com.br
+  MAIL_PORT: 465
+  MAIL_USERNAME: portaldorh@hotelariabrasil.com.br
+  MAIL_PASSWORD: Dev@7890
+  MAIL_ENCRYPTION: ssl
+  MAIL_FROM_ADDRESS: portaldorh@hotelariabrasil.com.br
+  MAIL_FROM_NAME: Hotelaria Brasil
+
+  ## To use Stackdriver logging in your Laravel application, copy
+  ## "app/Logging/CreateStackdriverLogger.php" and "config/logging.php"
+  ## into your Laravel application. Then uncomment the following line:
+  # LOG_CHANNEL: stackdriver
+
+handlers:
+- url: /js
+  static_dir: public/js
+- url: /css
+  static_dir: public/css
+- url: /img
+  static_dir: public/img
+
+# Catch all unhandled requests and pass to mod_rewrite.php which will simulate
+# mod_rewrite by forwarding the requests to index.php?q=... (or other root-level
+# PHP file if specified in incoming URL.
+#- url: /.*
+#  script: mod_rewrite.php

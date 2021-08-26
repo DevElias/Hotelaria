@@ -1,0 +1,23 @@
+
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+//custom header admin
+@import'headeradmin';
+// Variables
+@import 'login';
+// Dashboard
+@import 'dashboard';
+// Procedimentos
+@import 'procedimentos';
+// Perguntas
+@import 'perguntas';
+// Vagas
+@import 'vagas';
+// admin
+@import 'admin';
+// mobile
+@import 'mobile';

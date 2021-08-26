@@ -1,0 +1,89 @@
+.categorias-procedimentos {
+    background:$white;
+    .title {
+        display: block;
+        background: $blue;
+        border-radius: 3px  3px 0 0;
+        h3 {
+            color:$white;
+            font-weight: 400;
+            padding: 10px;
+            margin:0;
+            font-size: 16px;
+            img {
+                margin-top: -5px;
+            }
+        }
+    }
+    .content-btns {
+        border-radius: 3px;
+        border: 1px solid $gray;
+        border-top:none;
+    }
+    .btn, .dropdown-item {
+        display: block;
+        width: 100%;
+        border-top: 1px solid $gray;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 500;
+        position: relative;
+        border-radius: 0;
+        padding: 15px;
+    }
+    .btn:hover {
+        background:#f1f6f7;
+    }
+    .btn:after {
+        vertical-align: 0;
+        right: 10px;
+        position: absolute;
+        top: 20px;
+    }
+    .dropdown-menu {
+        margin: 0;
+        padding:0;
+    }
+    .dropdown-item {
+        color:$cortitle;
+    }
+    .dropdown-item:hover {
+        background:#f1f6f7;
+    }
+
+}
+
+.titulo-categoria {
+    padding: 20px 0 30px;
+    strong {
+        font-weight: 600;
+    }
+}
+.buscar {
+    .has-search {
+        position: relative;
+        .btn-buscar {
+            position: absolute;
+            background:none;
+            padding-top: 5px;
+            border:none;
+        }
+        input {
+            padding-left: 35px;
+            border-radius: 0;
+            border:none;
+            border-bottom: 1px solid $cortitle;
+            background:none;
+        }
+    }
+}
+.link-back {
+    color:$cortitle;
+    padding-bottom: 20px;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+}
+.link-back:hover, .link-back:active {
+    text-decoration: none!important;
+}

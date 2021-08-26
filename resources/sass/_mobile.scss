@@ -1,0 +1,416 @@
+@media(max-width:728px){
+    //MENU PRINCIPAL
+    .removemobile {
+        display: none!important;
+    }
+    .navbar.header-system {
+        .navbar-toggler {
+            width: 15%;
+            padding:0;
+            margin:0;
+
+            &:focus {
+                outline: none;
+            }
+            .navbar-toggler-icon {
+                background-image:url('/img/arrow-left.png')!important;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+               }
+        }
+        .navbar-toggler.collapsed {
+            .navbar-toggler-icon {
+                background-image:url('/img/bar.png')!important;
+            }
+        }
+        .navbar-brand {
+            margin:0;
+            width: 65%;
+            text-align: center;
+            .logo {
+                height:38px;
+            }
+        }
+        .fotomobile {
+            width: 20%;
+            text-align: right;
+            img {
+                height: 38px;
+                width: 38px;
+            }
+        }
+        .navbar-nav {
+            text-align: center;
+            margin: 20px 0;
+            padding:20px 0;
+            border-top:1px solid rgba(246, 246, 246, 0.38);
+            border-bottom:1px solid rgba(246, 246, 246, 0.38);
+            li {
+                margin:10px 0;
+                a {
+                    font-size: 16px;
+                }
+                &:nth-child(1){
+                    padding-left: 0;
+                }
+            }
+        }
+        .navbar-collapse.show {
+            height: calc(100vh - 65px);
+        }
+        .minhacontamobile {
+            a {
+                color:$white;
+                padding:10px 5px;
+                display: inline-block;
+            }
+        }
+        .linkvoltarmobile {
+            a {
+                color:$white;
+                font-size: 16px;
+                border-bottom:1px solid rgba(246, 246, 246, 0.38);
+                width: 100%;
+                border-radius: 0;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+
+    //Card Dashboard
+    .card {
+        height: auto!important;
+        .card-content {
+            width: 100%!important;
+            height: auto!important;
+        }
+        .card-viz, .card-baixa {
+            width: 50%!important;
+            border-top:1px solid #c4c4c4;
+            margin-bottom: 1px;
+            height: auto!important;
+            a {
+                padding:5px 0!important;
+            }
+        }
+    }
+
+    //Login Mobile
+    .bg-login {
+        padding-top: 50px;
+        padding-bottom: 350px;
+        background-position: bottom right;
+        background-size:100%;
+        background-image:url('/img/img-banner-login-mobile.png')
+    }
+    .login-nav {
+        position: relative;
+        margin-bottom: 100px;
+
+        .navbar-brand {
+            width: 100%!important;
+            text-align: center;
+            z-index: 2;
+        }
+    }
+    .footer  {
+        .line-style {
+            border:none;
+        }
+    }
+    .footersitemobile {
+        .social-icons {
+            margin-bottom: 40px;
+        }
+        .line-style {
+            .text-right{
+                text-align: left!important;
+            }
+        }
+    }
+
+
+    //Procedimentos
+    .section-mobilehead {
+        background-color: #056a7d;
+        color:$white;
+        padding:15px 0;
+    }
+
+
+    .categorias-procedimentos {
+        .title {
+            border-radius: 0;
+            .navbar-toggler {
+                border:1px solid $white;
+                border-radius: 3px;
+                padding: 0;
+                width: 100%;
+                text-align: left;
+                outline: none;
+                img {
+                    filter:brightness(100);
+                }
+                &:after {
+                    content: "";
+                    background:url('/img/ico-seta-baixo.svg');
+                    width: 19px;
+                    height: 18px;
+                    background-repeat: no-repeat;
+                    background-position: center right;
+                    top: 10px;
+                    right: 32px;
+                    position: absolute;
+                    filter:brightness(100);
+                }
+            }
+        }
+        .navbar-collapse {
+            li {
+                color:$cortitle;
+                list-style: none;
+                &.dropdown:after {
+                    content: "";
+                    background:url('/img/ico-seta-baixo.svg');
+                    width: 19px;
+                    height: 18px;
+                    background-repeat: no-repeat;
+                    background-position: center right;
+                    top: 15px;
+                    right: 15px;
+                    position: absolute;
+                }
+                a {
+                    color:$cortitle;
+                }
+                h5 {
+                    margin: 0;
+                }
+                .card-body {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .buscar  {
+        .has-search {
+            input {
+                color:$white;
+                border-color:$white;
+                &::placeholder{
+                    color:$white;
+                }
+            }
+            .btn-buscar {
+                filter:brightness(100);
+            }
+        }
+        .busca-preto {
+            input {
+                color:$cortitle;
+                border-color:$cortitle;
+                &::placeholder{
+                    color:$cortitle;
+                }
+            }
+            .btn-buscar {
+                filter:none;
+            }
+        }
+    }
+    .customperguntas {
+        .card  {
+            .card-pergundas-visualizar {
+                width: 100%;
+
+                a {
+                    p {
+                        display: inline;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .card-viz.card-home, .card-baixa.card-home, .customperguntas .card .card-pergundas-visualizar a {
+        .text-center {
+            margin-bottom: 0px;
+        }
+    }
+    .customperguntas .card .card-pergundas-visualizar {
+        height: 35px;
+    }
+    .section-dashclient .outros .card-saiba {
+        width: 100%;
+        text-align: center;
+    }
+    .linhamobile {
+        display: block;
+        height: 1px;
+        background:#00a8a7;
+        margin-top: 25px;
+    }
+    .text-center-desktop {
+        text-align: left;
+    }
+    .perguntas {
+        .btn-pergunta {
+            padding-right: 20px;
+        }
+    }
+    .outros {
+        .card {
+            .card-content {
+                .cat {
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid $gray;
+                }
+            }
+        }
+    }
+    .displayblocklinkm {
+        display: block;
+        text-align: center;
+        padding:10px 0;
+        font-size: 16px;
+    }
+    .font-size13mob {
+        font-size: 13px;
+    }
+    .section-dashclient .outros .card-saiba a {
+        padding-top: 5px;
+    }
+    .section-dashclient .outros .card-saiba {
+        height: 35px;
+    }
+    .section-dashclient .card .card-viz.card-home a p, .section-dashclient .card .card-baixa.card-home a p {
+        display: inline;
+        padding-right: 10px;
+    }
+    .section-dashclient h2 {
+        font-size: 18px;
+    }
+    .vertodas {
+        display: block;
+        text-align: center;
+        border:1px solid $cortitle;
+        border-radius: 3px;
+        margin:20px 0;
+        font-size:12px;
+        padding:10px 0;
+    }
+    .section-dashclient .vagas .btncard-visualizar {
+        line-height: 2;
+    }
+    .section-dashclient .vagas .btncard-visualizar img{
+        height: 8px;
+        margin-top: -2px;
+    }
+    .section-dashclient .outros .card-saiba a img {
+        padding-left: 6px;
+        margin-top: -3px;
+    }
+    .nomemobile {
+        padding-top: 5px;
+        color:#fff;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+    }
+    .botaoordernarpor
+    {
+        width: 100%;
+        .btn {
+            display: block;
+            text-align: center;
+            border:1px solid $cortitle;
+            border-radius: 3px;
+            margin:20px 0;
+            padding:10px 0;
+            font-size:16px;
+        }
+    }
+    .palavras-chavemobile {
+        padding-top: 20px;
+        .categorias-procedimentos {
+            position: relative;
+        }
+        .categorias-procedimentos .title .navbar-toggler:after {
+            right: 18px;
+        }
+    }
+    .hide-mobile {
+        display: none!important;
+    }
+    .titulo-categoria {
+        font-size: 18px;
+        strong {
+            font-weight: 700;
+        }
+    }
+    .section-dashclient .customvagas.editarmobile {
+        margin:0;
+    }
+    .section-dashclient .customvagas .card-visualizar .btncard-visualizar {
+        padding:0;
+    }
+    #formularioCand, #formularioPerfil {
+        .form-group {
+            div:nth-child(2), div:nth-child(3) {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .form-nomearquivo {
+        width: 100%;
+    }
+    button.btn.btn-anexarcv {
+        margin: 10px 0 0;
+    }
+    .hide-desktop {
+        display: block!important;
+    }
+    .titlevagasmobile {
+        margin-top: 20px;
+    }
+    .borda-baixomobile {
+        border-bottom: 1px solid $gray;
+        padding-bottom: 10px;
+    }
+    .removebddireita {
+        border-right:none!important;
+    }
+    .content-vaga-mobile {
+        margin:0;
+        margin-bottom: 20px;
+    }
+    .conteudo-vaga .descricao h2 {
+        font-size: 16px;
+    }
+    #palavraschave {
+        a {
+            display:block;
+            color:$cortitle;
+            padding:10px 0;
+            border-bottom: 1px solid $gray;
+            font-weight: 500;
+            padding-left: 10px;
+        }
+    }
+    .menumobilevagasestilo {
+        width: 100%;
+        display: block;
+        white-space: nowrap;
+        font-size: 0;
+        overflow: auto;
+        .col-md-auto {
+            width: auto;
+            display: inline-block;
+            font-size: 16px;
+            padding:10px 20px;
+        }
+    }
+}

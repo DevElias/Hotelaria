@@ -1,0 +1,62 @@
+# /home
+.bash_history
+.bash_logout
+.bashrc
+.composer
+.profile
+.ssh
+.config
+.docker
+
+# docker
+.docker
+
+# kubernetes
+.minikube
+
+# composer
+/vendor
+vendor.zip
+
+#  phpunit
+.phpunit.result.cache
+
+# laravel
+.env
+.env.backup
+Homestead.json
+Homestead.yaml
+
+# node
+npm-debug.log
+node_modules.zip
+/node_modules
+.npm
+
+# yarn
+yarn-error.log
+
+# vscode
+.phpls
+
+# eclipse
+.theia
+
+# phpstorm
+.idea
+
+# project
+public/candidatos/
+public/fotos/
+public/perguntas/
+public/procedimentos/
+
+# ?
+/public/hot
+/public/storage
+mt-*
+/storage/*.key
+.arquivos/
+
+# gCloud
+cloud_sql_proxy

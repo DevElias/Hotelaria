@@ -1,0 +1,221 @@
+.header-system {
+    background-image: linear-gradient(to right, #056a7d, #003e4d);
+}
+.login-nav {
+    position: relative;
+    padding-bottom: 50px;
+    background-image:url('/img/bg-topo.png');
+    background-size: cover;
+    background-position: bottom;
+    .navbar-brand {
+        img {
+            position: relative;
+        }
+    }
+}
+.bg-login {
+    margin-top: -100px;
+    background:url('/img/img-banner-login.png')  no-repeat center;
+    padding: 150px 0 150px;
+    background-position:top center;
+    .fontesqueci {
+        font-size:14px;
+        color:#656565;
+    }
+    .customvoltarlogin {
+        color:#003e4d;
+        font-weight:500;
+    }
+    .labelfontesqueci {
+        font-size:14px;
+        color:#656565;
+        font-weight:500;
+    }
+    .btn-primary {
+        background-color: $blue;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+#login {
+    label.col-form-label {
+        font-weight: bold;
+    }
+    .link-esqueci {
+        text-decoration: underline;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+//Perguntas
+.perguntas {
+    position: relative;
+    background:#e1eced;
+    padding-bottom: 50px;
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.41;
+        letter-spacing: normal;
+        color: $blue;
+    }
+    .card-question {
+        border-bottom:1px solid #d4d4d4;
+        margin:10px 0;
+    }
+    .card-body-question {
+        padding:0.375rem 0.75rem;
+    }
+    .btn-pergunta {
+        font-family: 'Roboto', sans-serif;
+        position:relative;
+        color:#282828;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.41;
+        letter-spacing: normal;
+        display:block;
+        width: 100%;
+        text-align: left;
+    }
+    .btn-pergunta::after {
+        content: "";
+        width: 20px;
+        height: 10px;
+        background:url('/img/ico-seta-baixo.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 5px;
+        right: 0px;
+        position: absolute;
+    }
+
+    .btn-pergunta[aria-expanded="true"]::after {
+        content: "";
+        background:url('/img/ico-seta-cima.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .card-body-question {
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        color: #656565;
+    }
+}
+.perguntas:before {
+    content: "";
+    top:-117px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 117px;
+    background:url('/img/img-ondas-perguntas.svg')  no-repeat center;
+
+}
+.footer {
+    padding-top: 80px;
+    background-image: linear-gradient(to left, #056a7d, #003e4d);
+
+    h3 {
+        color:$white;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.41;
+        letter-spacing: normal;
+        padding-bottom: 10px;
+    }
+
+    .line-style {
+        border-top:2px solid #00a8a7;
+        padding:10px 0;
+        a, span {
+            color:#00a8a7;
+        }
+    }
+
+    ul {
+        padding:0;
+        margin:0;
+        margin-bottom: 40px;
+        li {
+            padding: 0;
+            margin:0;
+            list-style: none;
+            a {
+                color:$white;
+            }
+        }
+    }
+}
+.footer-logado {
+    padding: 35px 0;
+    a, span {
+        color:#00a8a7;
+    }
+}
+
+//Usuarios Cadastro
+.section-dashclient {
+    .default {
+        h2:before {
+            background:$blue;
+        }
+    }
+}
+//Botão Upload Custom
+.upload-btn-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+.btn-upload {
+    border:2px solid $blue;
+    background:none;
+    color:$blue;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+
+    &:hover {
+        background-color: $blue;
+        color:$white;
+    }
+}
+
+.upload-btn-wrapper input[type=file] {
+font-size: 100px;
+position: absolute;
+width: 100%;
+left: 0;
+top: 0;
+opacity: 0;
+}
+.olhosenha {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 7%;
+    background: url('/img/ico-visualizar.svg')  no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    top: 9px;
+}

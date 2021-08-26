@@ -1,0 +1,11 @@
+.gcloudignore
+.git
+.gitignore
+/vendor/
+/node_modules/
+/.git/
+venv/
+public/perguntas
+public/procedimentos
+public/candidatos
+public/fotos/

@@ -1,0 +1,54 @@
+.marginbtm-50 {
+    margin-bottom: 50px;
+}
+.opcoes-tabela {
+    min-width: 160px;
+}
+.positionrelative {
+    position: relative;
+}
+.navbar  .dropdown .dropdown-toggle.paddingtop20 {
+    text-align: left;
+    white-space: initial;
+    position: relative;
+    padding-right: 15px;
+    text-align: right;
+    max-width: 104px;
+    line-height: 15px;
+    height: 54px;
+    padding-top: 18px;
+    &:after {
+        right: 0;
+        position: absolute;
+        top: 30px;
+    }
+}
+#formularioPerfil, #formularioCand {
+    label {
+        font-weight: 500;
+    }
+}
+.menuadmin {
+    background: #056a7d;
+    .bg-light {
+        background: #056a7d!important;
+        a {
+            color:#fff;
+        }
+        .navbar-nav {
+            li {
+                a {
+                    color:#fff;
+                }
+            }
+            .dropdown-menu {
+                background: #056a7d;
+                .dropdown-item {
+                    &:hover {
+                        background: #014554;
+                    }
+                }
+            }
+        }
+    }
+}
